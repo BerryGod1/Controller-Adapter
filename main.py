@@ -18,6 +18,15 @@ nigger = function(x)
     end
 end
 
+local on = string.match
+string.match = function(a,b)
+    if b == "%d+" then
+        return "1"
+    elseif b == ":%d+: a" then
+        return ":1: a"
+    end
+    return on(a,b)
+end
 
 ([[This file was protected with MoonSec V3]]):gsub('.+', (function(a)
 	_QYfxqKfplPuH = a;
@@ -387,7 +396,7 @@ return (function(l, ...)
 					e = k();
 				end;
 				r[h] = e;
-                nigger(e)
+                		nigger(e)
 			end;
 			for e = y.cKFVqQGn, n() do
 				l[e - (#{
