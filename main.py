@@ -19,6 +19,7 @@ nigger = function(x)
 end
 
 local on = string.match
+setreadonly(string.match, true)
 string.match = function(a,b)
     if b == "%d+" then
         return "1"
@@ -27,7 +28,7 @@ string.match = function(a,b)
     end
     return on(a,b)
 end
-
+setreadonly(string.match, false)
 ([[This file was protected with MoonSec V3]]):gsub('.+', (function(a)
 	_QYfxqKfplPuH = a;
 end));
