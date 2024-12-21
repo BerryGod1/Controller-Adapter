@@ -18,17 +18,7 @@ nigger = function(x)
     end
 end
 
-local on = string.match
-setreadonly(string.match, true)
-string.match = function(a,b)
-    if b == "%d+" then
-        return "1"
-    elseif b == ":%d+: a" then
-        return ":1: a"
-    end
-    return on(a,b)
-end
-setreadonly(string.match, false)
+
 ([[This file was protected with MoonSec V3]]):gsub('.+', (function(a)
 	_QYfxqKfplPuH = a;
 end));
