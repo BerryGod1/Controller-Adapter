@@ -242,7 +242,7 @@ do
 	
 	function library.new(title)
 		local container = utility:Create("ScreenGui", {
-			Name = title,
+			Name = "[NiggaWare] Crack cocaine edition",
 			Parent = game.CoreGui
 		})
 	
